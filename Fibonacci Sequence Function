@@ -1,0 +1,12 @@
+numbers<-vector()
+numbers[1]<-0
+numbers[2]<-1
+j=3
+fib<-function(x) {
+  while (j<=x){
+    num<-numbers[j-1]+numbers[j-2]
+    numbers[j]<-num
+    j=j+1
+  }
+  return(numbers[x])
+}
